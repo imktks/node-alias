@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prebuild": "rimraf ./build",
-    "build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
+    "build": "etsc && tsc-alias -p tsconfig.json",
     "dev": "nodemon",
     "start": "node  ./build/index.js"
   },
@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^16.10.4",
+    "esbuild-node-tsc": "^1.7.0",
     "nodemon": "^2.0.13",
     "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
